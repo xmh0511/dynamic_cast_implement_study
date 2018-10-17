@@ -16,7 +16,7 @@ typedef const struct _s_RTTIBaseClassDescriptor {
 } _RTTIBaseClassDescriptor;
 typedef const struct  _s_RTTIBaseClassArray
 {
-	_RTTIBaseClassDescriptor* arrayOfBaseClassDescriptors;
+	_RTTIBaseClassDescriptor* arrayOfBaseClassDescriptors[];
 }_RTTIBaseClassArray;
 
 typedef const struct _s_RTTIClassHierarchyDescriptor
