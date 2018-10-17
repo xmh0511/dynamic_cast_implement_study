@@ -77,7 +77,7 @@ public:
 		auto pptr = completelocalptr->pClassDescriptor->pBaseClassArray->arrayOfBaseClassDescriptors;
 		for (int i = 0; i < completelocalptr->pClassDescriptor->numBaseClasses; i++)
 		{
-			std::cout<<pptr->pTypeDescriptor->name()<<std::endl;
+			std::cout<<(*pptr)->pTypeDescriptor->name()<<std::endl;
 			pptr++;
 		}
 		std::cout << "vdisp===" << *(long*)(((void***)bptr) - 1) << std::endl;
